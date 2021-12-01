@@ -1,0 +1,37 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: sans-serif;
+  background: #000;
+}
+a{
+  text-decoration: none;
+  color: white;
+  font-size: 4vmin;
+}
+p{
+  position: relative;
+  text-align: center;
+  font-size: 8vmin;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-size: 80% 100%;
+  background-repeat: no-repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shineText 6s linear infinite;
+}
+@keyframes shineText {
+  0%{
+    background-position-x: -500%;
+  }
+  100%{
+    background-position-x: 500%;
+  }
+}
